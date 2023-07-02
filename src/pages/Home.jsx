@@ -1,6 +1,9 @@
 import React, { useContext } from 'react'
 import { ProductContext } from '../contexts/ProductContext'
 import Product from '../components/Product';
+import Header from './../components/Header'
+import Sidebar from '../components/Sidebar';
+
 
 const Home = () => {
     const { products}  = useContext(ProductContext);
@@ -9,6 +12,9 @@ const Home = () => {
     })
     
   return (
+<>
+<Header/>
+<Sidebar/>
     <section className='py-16'>
         <div className='container mx-auto'>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-[30px] '>
@@ -18,6 +24,7 @@ const Home = () => {
             </div>
         </div>
     </section>
+                </>
   )
 }
 

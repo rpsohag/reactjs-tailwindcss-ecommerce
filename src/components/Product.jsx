@@ -2,6 +2,7 @@ import React from 'react'
 import { BsPlus, BsEyeFill } from "react-icons/bs";
 import { Link } from 'react-router-dom';
 
+
 const Product = ({product}) => {
     const {id, image, category, title , price} = product;
 
@@ -13,7 +14,7 @@ const Product = ({product}) => {
                     <img className='max-h-[160px] group-hover:scale-110 duration-300' src={image} />
                 </div>
             </div>
-            <div className='absolute top-0 right-0 py-2 flex flex-col items-center justify-center gap-y-2 opacity-0 group-hover:opacity-100 transition-all duration-75 group-hover:right-5 -right-11'>
+            <div className='absolute top-0 right-0 py-2 flex flex-col items-center justify-center gap-y-2 opacity-0 group-hover:opacity-100 transition-all duration-75 group-hover:right-5'>
             <button>
                 <div className='flex justify-center items-center text-white bg-red-500 w-12 h-12'>
                 <BsPlus className="text-3xl" />

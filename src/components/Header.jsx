@@ -1,8 +1,13 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { SidebarContext } from '../contexts/SidebarContext'
 
 const Header = () => {
+  const {isOpen, setIsOpen} = useContext(SidebarContext)
   return (
-    <div>Header</div>
+    <div>
+      <div>Header</div>
+      <button onClick={() => setIsOpen(!isOpen)}>Click</button>
+    </div>
   )
 }
 
