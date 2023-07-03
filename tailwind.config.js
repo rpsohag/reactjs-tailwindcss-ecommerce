@@ -15,6 +15,7 @@ export default {
       }
     },
     screens: {
+      xs: "540px",
       sm: "640px",
       md: "768px",
       lg: "1024px",
@@ -25,7 +26,7 @@ export default {
       primary: "#222222",
       secondary: "#F5E6E0",
      },
-     backgroundColor: {
+     backgroundImage: {
       hero: "url('./img/bg_hero.jpg')",
      } 
     },
