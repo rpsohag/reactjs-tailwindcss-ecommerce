@@ -4,6 +4,8 @@ import Product from '../components/Product';
 import Header from './../components/Header'
 import Sidebar from '../components/Sidebar';
 import Hero from '../components/Hero';
+import Help from '../components/Help';
+import Footer from '../components/Footer';
 
 
 const Home = () => {
@@ -19,13 +21,15 @@ const Home = () => {
 <Sidebar/>
     <section className='py-16'>
         <div className='container mx-auto'>
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-[30px] '>
+            <div className='grid p-3 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-[30px] '>
                 {filterProducts.map(product => {
                     return <Product product={product} key={product.id}/>
                 }) }
             </div>
         </div>
     </section>
+    <Help/>
+    <Footer/>
                 </>
   )
 }
