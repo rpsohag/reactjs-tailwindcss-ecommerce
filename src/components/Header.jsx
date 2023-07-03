@@ -7,6 +7,7 @@ import Logo from './../img/logo.png'
 
 const Header = () => {
   const {isOpen, setIsOpen} = useContext(SidebarContext);
+  console.log(isOpen)
   const [isActive, setIsActive] = useState(false)
   const {itemAmount} = useContext(CartContext)
   useEffect(() => {
